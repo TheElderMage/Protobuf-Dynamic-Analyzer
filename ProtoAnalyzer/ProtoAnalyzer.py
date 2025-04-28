@@ -35,7 +35,7 @@ def handle_sqlite_db(db_path):
         cursor = db.cursor()
 
         # Query to select all binary data from the messages_v2 table
-        cursor.execute('SELECT data FROM conversation_entries;') #   <<<<<<<<-------------------------------------- query if data is in SQLITE
+        cursor.execute('') #   <<<<<<<<-------------------------------------- query if data is in SQLITE
 
         all_rows = cursor.fetchall()
         decoded_data = []
@@ -98,10 +98,10 @@ def extract_binary_data(db_path, output_file_path):
     print(f"Decoded data has been saved to {output_file_path}.")
 
 # Replace with your actual database path and output file path
-db_path = r"C:\Users\Aref Bakhshi\Desktop\1787396382493392896-66.db" #  <<<<<<<<--------------------------------  File Path
+db_path = r"" #  <<<<<<<<--------------------------------  File Path
 
 
-output_file_path = r"D:\Outputs\Results3.txt"  #  <<<<<<<<------------------------------------------------------  OutPut Directory Path
+output_file_path = r""  #  <<<<<<<<------------------------------------------------------  OutPut Directory Path
 
 # Call the function to extract and decode the data
 extract_binary_data(db_path, output_file_path)
